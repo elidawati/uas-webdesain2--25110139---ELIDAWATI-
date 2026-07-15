@@ -252,6 +252,397 @@ transform:translateY(0);
 
 }
 
+/*=========================================
+    LATAR BELAKANG SECTION
+=========================================*/
+.bg-light{
+    background:linear-gradient(180deg,#fffdf8,#fff5e6)!important;
+}
+
+/*=========================================
+        CARD MODERN PREMIUM
+=========================================*/
+.modern-card{
+    border:none;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    transition:.4s;
+    background:#fff;
+}
+
+.modern-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:7px;
+    background:linear-gradient(90deg,#ff9800,#ff5722,#ffc107);
+}
+
+.modern-card::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:rgba(255,193,7,.10);
+    border-radius:50%;
+    right:-70px;
+    bottom:-70px;
+}
+
+.modern-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 45px rgba(255,111,0,.25)!important;
+}
+
+/*=========================================
+            ICON
+=========================================*/
+.icon-box{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:#fff;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    box-shadow:0 10px 30px rgba(255,111,0,.35);
+    transition:.5s;
+}
+
+.modern-card:hover .icon-box{
+    transform:rotate(360deg) scale(1.1);
+}
+
+/*=========================================
+        JUDUL
+=========================================*/
+.modern-card h4{
+    color:#e65100;
+    margin-top:15px;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+/*=========================================
+        PARAGRAF
+=========================================*/
+.modern-card p{
+    line-height:1.9;
+    color:#666!important;
+}
+
+/*=========================================
+     WARNA SETIAP CARD BERBEDA
+=========================================*/
+
+/* Card 1 */
+.col-lg-4:nth-child(1) .modern-card{
+    background:linear-gradient(180deg,#ffffff,#fff8ef);
+}
+
+/* Card 2 */
+.col-lg-4:nth-child(2) .modern-card{
+    background:linear-gradient(180deg,#ffffff,#fffdf3);
+}
+
+/* Card 3 */
+.col-lg-4:nth-child(3) .modern-card{
+    background:linear-gradient(180deg,#ffffff,#fff7e8);
+}
+
+/*=========================================
+      GARIS HIAS
+=========================================*/
+.modern-card h4::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:4px;
+    margin:10px auto;
+    background:linear-gradient(to right,#ff9800,#ffc107);
+    border-radius:20px;
+}
+
+/*=========================================
+        ANIMASI
+=========================================*/
+.modern-card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+    
+    <style>
+    /*=============================
+      VISI MISI PREMIUM
+=============================*/
+
+.vision-box{
+
+background:linear-gradient(135deg,#fffaf4,#fff3df);
+
+padding:50px;
+
+border-radius:35px;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:0 20px 45px rgba(255,111,0,.18);
+
+}
+
+/* Ornamen */
+
+.vision-box::before{
+
+content:"🍜";
+
+position:absolute;
+
+font-size:170px;
+
+top:-25px;
+
+right:30px;
+
+opacity:.05;
+
+}
+
+.vision-box::after{
+
+content:"🥢";
+
+position:absolute;
+
+left:20px;
+
+bottom:-10px;
+
+font-size:120px;
+
+opacity:.05;
+
+}
+
+/* Card */
+
+.visi-card,
+.misi-card{
+
+height:100%;
+
+padding:35px;
+
+border-radius:25px;
+
+color:#fff;
+
+position:relative;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+/* Warna */
+
+.visi-card{
+
+background:linear-gradient(135deg,#ff9800,#ff6f00);
+
+}
+
+.misi-card{
+
+background:linear-gradient(135deg,#ff5722,#e65100);
+
+}
+
+/* Lingkaran */
+
+.visi-card::before,
+.misi-card::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.10);
+
+right:-80px;
+
+top:-80px;
+
+}
+
+.visi-card::after,
+.misi-card::after{
+
+content:"";
+
+position:absolute;
+
+width:150px;
+
+height:150px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.08);
+
+left:-40px;
+
+bottom:-40px;
+
+}
+
+/* Hover */
+
+.visi-card:hover,
+.misi-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
+
+/* Icon */
+
+.title-icon{
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+background:#fff;
+
+color:#ff6f00;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:36px;
+
+margin:0 auto 20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+transition:.5s;
+
+}
+
+.visi-card:hover .title-icon,
+.misi-card:hover .title-icon{
+
+transform:rotate(360deg) scale(1.1);
+
+}
+
+/* Judul */
+
+.visi-card h2,
+.misi-card h2{
+
+text-align:center;
+
+font-size:34px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+.visi-card h2::after,
+.misi-card h2::after{
+
+content:"";
+
+display:block;
+
+width:70px;
+
+height:4px;
+
+margin:12px auto;
+
+background:#fff;
+
+border-radius:20px;
+
+}
+
+/* Isi */
+
+.visi-card p{
+
+font-size:17px;
+
+line-height:1.9;
+
+text-align:justify;
+
+}
+
+.misi-card ul{
+
+padding-left:22px;
+
+margin:0;
+
+}
+
+.misi-card li{
+
+margin-bottom:12px;
+
+line-height:1.8;
+
+}
+
+.misi-card li::marker{
+
+color:#fff;
+
+font-size:18px;
+
+}
 </style>
 
 </head>
@@ -551,8 +942,7 @@ Hubungi Kami
     </div>
 
 </section>
-
-<!-- LATAR BELAKANG -->
+    <!-- LATAR BELAKANG -->
 <section class="py-5 bg-light">
 
     <div class="container">
@@ -589,9 +979,7 @@ Hubungi Kami
 
                         <p class="text-muted">
 
-                            Menyediakan makanan yang lezat,
-                            mengenyangkan,
-                            dan cocok dinikmati setiap hari.
+                            Setiap mangkuk Mie Ayam Joyo Mulyo diracik menggunakan resep khas yang dipadukan dengan bumbu pilihan, sehingga menghadirkan cita rasa yang lezat, gurih, dan tetap konsisten di setiap sajian
 
                         </p>
 
@@ -619,9 +1007,8 @@ Hubungi Kami
 
                         <p class="text-muted">
 
-                            Menggunakan mie pilihan,
-                            ayam segar,
-                            serta racikan bumbu spesial.
+                            Kami mengutamakan penggunaan ayam segar, mie berkualitas, dan bumbu pilihan yang diracik setiap hari. 
+                            Proses pengolahan yang higienis serta standar kualitas yang terjaga menjadikan setiap porsi Mie Ayam Joyo Mulyo memiliki cita rasa khas, lezat, dan selalu memuaskan pelanggan.
 
                         </p>
 
@@ -649,9 +1036,7 @@ Hubungi Kami
 
                         <p class="text-muted">
 
-                            Porsi mengenyangkan
-                            dengan harga yang terjangkau
-                            untuk semua kalangan.
+                            Kami selalu berusaha menghadirkan pelayanan yang cepat, ramah, dan profesional, dipadukan dengan sajian mie ayam bercita rasa khas, porsi yang mengenyangkan, serta harga yang terjangkau agar setiap pelanggan merasa puas dan ingin kembali.
 
                         </p>
 
@@ -675,62 +1060,67 @@ Hubungi Kami
         <div class="vision-box">
 
             <div class="row">
-
 <!-- VISI MISI -->
+<section class="py-5">
+
 <div class="container">
 
-    <div class="row">
+<div class="vision-box">
 
-        <!-- VISI -->
-        <div class="col-lg-6 mb-4">
+<div class="row">
 
-            <div class="visi-card h-100">
+<!-- VISI -->
+<div class="col-lg-6 mb-4">
 
-                <h2>
-                    <i class="bi bi-eye-fill"></i>
-                    Visi
-                </h2>
+<div class="visi-card h-100">
 
-                <p>
-                    Visi dari usaha mie ayam joyo mulyo ini adalah menciptakan produk makanan
-                    unggulan yang berkualitas dan banyak diminati masyarakat
-                    dengan mengedepankan makanan yang sehat serta menggunakan
-                    bahan-bahan pilihan dari Indonesia.
-                </p>
+<div class="title-icon">
+<i class="bi bi-eye-fill"></i>
+</div>
 
-            </div>
+<h2>Visi</h2>
 
-        </div>
-
-        <!-- MISI -->
-        <div class="col-lg-6 mb-4">
-
-            <div class="misi-card h-100">
-
-                <h2>
-                    <i class="bi bi-bullseye"></i>
-                    Misi
-                </h2>
-
-                <ul>
-                    Adapun misi dari usaha ini adalah sebagai berikut:
-
-
-                    <li>Memberikan inovasi-inovasi yang sukar di ikuti.</li>
-                    <li>Membangun semangat entrepreneur (wirausaha).</li>
-                    <li>Terciptanya ekonomi bersama yang mandiri.</li>
-                    <li>Terbentuknya usaha ''Mie Ayam Sehat'' terbaik yang mengedepankan pelayanan, kenikmatan dan keberkahan.</li>
-                    <li>Memberikan harga yang terjangkau.</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
+<p>
+Adapun visi dari usaha ini adalah Menciptakan produk makanan unggulan yang berkualitas dan banyak diminati atau diskusi masyarakat dengan mengedepankan pencitraan makanan yang sehat dan dengan bahan-bahan pilihan dari Indonesia
 
 </div>
-                
+
+</div>
+
+<!-- MISI -->
+<div class="col-lg-6 mb-4">
+
+<div class="misi-card h-100">
+
+<div class="title-icon">
+<i class="bi bi-bullseye"></i>
+</div>
+
+<h2>Misi</h2>
+
+<ul>
+
+    Adapun misi dari usaha ini adalah sebagai berikut:
+    <li>Memberikan inovasi-inovasi yang sukar di ikuti</li>
+    <li>Membangun semangat Enterprenuer (wirausaha) </li>
+    <li>Terciptanya ekonomi bersama yang mandiri</li>
+    <li>Terbentuknya usaha ''Mie Ayam Sehat'' terbaik yang mengedepankan pelayanan, kenikmatan dan keberkahan.</li>
+    <li>Memberikan harga yang terjangkau.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 <!-- KEUNGGULAN -->
 <section class="py-5 bg-light">
 
@@ -863,7 +1253,7 @@ Hubungi Kami
     </div>
 
 </section>
-
+                
 <!-- CTA -->
 <section class="py-5">
 
