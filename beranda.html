@@ -2,461 +2,297 @@
 <html lang="id">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Bakso Joyo Mulyo | Beranda</title>
+    <title>Bakso Joyo Mulyo | Beranda</title>
 
-<!-- Bootstrap 4.6.2 -->
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
-<style>
+    <!-- Bootstrap 4.6.2 -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:#fff8f0;
-}
-
-/* ================= NAVBAR ================= */
-
-.navbar{
-    background:#ff8c00 !important;
-}
-
-.navbar-brand{
-    font-size:28px;
-    font-weight:bold;
-}
-
-.navbar .nav-link{
-    color:white !important;
-    font-weight:500;
-    margin-right:8px;
-}
-
-.navbar .nav-link:hover{
-    color:#fff3cd !important;
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.55),
-    rgba(0,0,0,.55)),
-    url("bakso.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    color:white;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:60px;
-    font-weight:bold;
-}
-
-.hero p{
-    font-size:22px;
-}
-
-/* ================= JUDUL SECTION ================= */
-
-.section-title{
-    font-weight:bold;
-    color:#ff8c00;
-}
-
-/* ================= CARD MENU ================= */
-
-.service-card{
-    transition:.3s;
-    border:none;
-    border-radius:20px;
-}
-
-.service-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-/* ===== CSS AGAR SEMUA GAMBAR SAMA UKURAN ===== */
-
-.card-img-top{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
-}
-
-.btn-warning{
-    font-weight:bold;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#ff8c00;
-}
-
-
-</style>
-
-</head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- =========================
+        NAVBAR
+========================== -->
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
 
-<div class="container">
+    <div class="container">
 
-<a class="navbar-brand" href="beranda.html">
-🍜 Bakso Joyo Mulyo
-</a>
+        <a class="navbar-brand" href="#">
+            🍜 Bakso Joyo Mulyo
+        </a>
 
-<button class="navbar-toggler"
-type="button"
-data-toggle="collapse"
-data-target="#navbarNav"
-aria-controls="navbarNav"
-aria-expanded="false"
-aria-label="Toggle navigation">
+        <button class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav">
 
-<span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
 
-</button>
+        </button>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse"
+        id="navbarNav">
 
-<ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
 
-<li class="nav-item">
-<a class="nav-link active" href="beranda.html">
-Beranda
-</a>
-</li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="beranda.html">
+                        Beranda
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="katalog.html">
-Menu
-</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">
+                        Menu
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="about.html">
-Tentang
-</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="kontak.html">
-Kontak
-</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html">
+                        Kontak
+                    </a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="testimoni.html">
-Testimoni
-</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimoni.html">
+                        Testimoni
+                    </a>
+                </li>
 
-<li class="nav-item ml-lg-3">
-<a class="btn btn-light btn-sm px-4" href="login.html">
-Login
-</a>
-</li>
+                <li class="nav-item ml-lg-3">
+                    <a href="login.html"
+                    class="btn btn-login">
+                        Login
+                    </a>
+                </li>
 
-<li class="nav-item ml-lg-2 mt-2 mt-lg-0">
-<a class="btn btn-warning btn-sm px-4" href="register.html">
-Register
-</a>
-</li>
+                <li class="nav-item ml-lg-2 mt-2 mt-lg-0">
+                    <a href="register.html"
+                    class="btn btn-register">
+                        Register
+                    </a>
+                </li>
+            </ul>
 
-</ul>
+        </div>
 
-</div>
-
-</div>
+    </div>
 
 </nav>
 
-<!-- ================= HERO ================= -->
+<!-- =========================
+          HERO
+========================== -->
 
 <section class="hero">
 
-<div class="container text-center">
+    <div class="container">
 
-<h1>
-Bakso Joyo Mulyo
-</h1>
+        <h1>
+            Selamat Datang di
+            <br>
+            Bakso Joyo Mulyo
+        </h1>
 
-<p class="lead mt-4">
+        <p>
+            Nikmati semangkuk bakso dengan cita rasa khas,
+            kuah gurih yang kaya rempah,
+            serta menggunakan daging sapi pilihan yang segar
+            dan berkualitas.
+        </p>
 
-Nikmati kelezatan bakso
-dengan bumbu khas,
-daging sapi melimpah,
-kuah gurih,
-dan harga yang terjangkau.
+        <a href="menu.html"
+        class="btn btn-menu">
+            Lihat Menu
+        </a>
 
-</p>
-
-<a href="katalog.html"
-class="btn btn-warning btn-lg px-5 mt-3">
-
-Lihat Menu
-
-</a>
-
-</div>
+    </div>
 
 </section>
 
-<div class="text-center mb-5">
+<!-- =========================================
+            KEUNGGULAN BAKSO JOYO MULYO
+========================================== -->
 
-    <h2 class="section-title">
-        Pilihan Menu Terlaris
-    </h2>
-
-    <p class="text-muted">
-        Menu yang paling banyak dipesan oleh pelanggan karena memiliki
-        cita rasa lezat, porsi mengenyangkan, dan harga yang terjangkau.
-    </p>
-
-</div>
-
-<div class="row">
-
-<!-- ================= MENU 1 ================= -->
-
-<div class="col-md-4 mb-4">
-
-    <div class="card service-card shadow h-100">
-
-        <img src="MieAyamPangsitRebus.jpg"
-             class="card-img-top"
-             alt="Mie Ayam Pangsit Rebus">
-
-        <div class="card-body text-center">
-
-            <h4 class="font-weight-bold">
-                🍜 Mie Ayam Pangsit Rebus
-            </h4>
-
-            <p class="text-muted">
-                Mie kenyal dipadukan
-                dengan ayam berbumbu khas,
-                sayuran segar,
-                dan kuah gurih.
-            </p>
-
-            <h5 class="text-warning font-weight-bold">
-                Rp23.000
-            </h5>
-
-            <a href="#" class="btn btn-warning mt-2">
-                Pesan Sekarang
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= MENU 2 ================= -->
-
-<div class="col-md-4 mb-4">
-
-    <div class="card service-card shadow h-100">
-
-        <img src="download.jfif"
-             class="card-img-top"
-             alt="Mie Ayam Bakso">
-
-        <div class="card-body text-center">
-
-            <h4 class="font-weight-bold">
-                🍜 Mie Ayam Bakso
-            </h4>
-
-            <p class="text-muted">
-                Mie ayam dengan
-                bakso sapi kenyal,
-                kuah gurih,
-                dan taburan daun bawang.
-            </p>
-
-            <h5 class="text-warning font-weight-bold">
-                Rp20.000
-            </h5>
-
-            <a href="#" class="btn btn-warning mt-2">
-                Pesan Sekarang
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- ================= MENU 3 ================= -->
-
-<div class="col-md-4 mb-4">
-
-    <div class="card service-card shadow h-100">
-
-        <img src="BAKSO1.jpg"
-             class="card-img-top"
-             alt="Bakso Telur">
-
-        <div class="card-body text-center">
-
-            <h4 class="font-weight-bold">
-                🍜 Bakso Telur
-            </h4>
-
-            <p class="text-muted">
-                Bakso telur dengan
-                daging sapi berbumbu spesial,
-                kuah hangat,
-                dan cita rasa khas.
-            </p>
-
-            <h5 class="text-warning font-weight-bold">
-                Rp20.000
-            </h5>
-
-            <a href="#" class="btn btn-warning mt-2">
-                Pesan Sekarang
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= KEUNGGULAN ================= -->
-
-<section class="py-5 bg-light">
+<section class="keunggulan">
 
 <div class="container">
 
 <div class="text-center mb-5">
 
 <h2 class="section-title">
-Mengapa Memilih Kami?
+Mengapa Memilih Bakso Joyo Mulyo?
 </h2>
 
-<p class="text-muted">
-Kami selalu mengutamakan kualitas rasa,
-kebersihan, dan kepuasan pelanggan.
+<p class="section-subtitle">
+Bakso lezat dengan bahan berkualitas dan pelayanan terbaik untuk seluruh pelanggan.
 </p>
 
 </div>
 
 <div class="row">
 
-<!-- ================= KEUNGGULAN 1 ================= -->
+<!-- CARD 1 -->
 
-<div class="col-md-3 mb-4">
+<div class="col-lg-4 col-md-6 mb-4">
 
-    <div class="card service-card shadow text-center p-4 h-100">
+<div class="card service-card">
 
-        <h2>🥢</h2>
+<div class="icon-box">
+🥩
+</div>
 
-        <h5 class="font-weight-bold mt-3">
-            Rasa Khas
-        </h5>
+<div class="card-body text-center">
 
-        <p class="text-muted">
-            Menggunakan resep turun-temurun
-            dengan cita rasa yang gurih
-            dan lezat.
-        </p>
+<h4>Daging Berkualitas</h4>
 
-    </div>
+<p>
+Menggunakan daging sapi pilihan sehingga menghasilkan
+bakso yang kenyal, gurih, dan kaya rasa.
+</p>
 
 </div>
 
-<!-- ================= KEUNGGULAN 2 ================= -->
-
-<div class="col-md-3 mb-4">
-
-    <div class="card service-card shadow text-center p-4 h-100">
-
-        <h2>🥬</h2>
-
-        <h5 class="font-weight-bold mt-3">
-            Bahan Segar
-        </h5>
-
-        <p class="text-muted">
-            Menggunakan bahan pilihan
-            yang segar dan berkualitas
-            setiap hari.
-        </p>
-
-    </div>
+</div>
 
 </div>
 
-<!-- ================= KEUNGGULAN 3 ================= -->
+<!-- CARD 2 -->
 
-<div class="col-md-3 mb-4">
+<div class="col-lg-4 col-md-6 mb-4">
 
-    <div class="card service-card shadow text-center p-4 h-100">
+<div class="card service-card">
 
-        <h2>😊</h2>
+<div class="icon-box">
+🍜
+</div>
 
-        <h5 class="font-weight-bold mt-3">
-            Pelayanan Ramah
-        </h5>
+<div class="card-body text-center">
 
-        <p class="text-muted">
-            Pelayanan cepat,
-            ramah,
-            dan selalu mengutamakan
-            kepuasan pelanggan.
-        </p>
+<h4>Kuah Gurih</h4>
 
-    </div>
+<p>
+Kuah dibuat dari kaldu asli dengan racikan rempah pilihan
+yang menghasilkan cita rasa khas.
+</p>
 
 </div>
 
-<!-- ================= KEUNGGULAN 4 ================= -->
+</div>
 
-<div class="col-md-3 mb-4">
+</div>
 
-    <div class="card service-card shadow text-center p-4 h-100">
+<!-- CARD 3 -->
 
-        <h2>💰</h2>
+<div class="col-lg-4 col-md-6 mb-4">
 
-        <h5 class="font-weight-bold mt-3">
-            Harga Terjangkau
-        </h5>
+<div class="card service-card">
 
-        <p class="text-muted">
-            Harga bersahabat
-            dengan porsi yang
-            mengenyangkan.
-        </p>
+<div class="icon-box">
+💰
+</div>
 
-    </div>
+<div class="card-body text-center">
+
+<h4>Harga Terjangkau</h4>
+
+<p>
+Porsi mengenyangkan dengan harga yang ramah di kantong,
+cocok untuk semua kalangan.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="col-lg-4 col-md-6 mb-4">
+
+<div class="card service-card">
+
+<div class="icon-box">
+🥣
+</div>
+
+<div class="card-body text-center">
+
+<h4>Menu Beragam</h4>
+
+<p>
+Tersedia Bakso Urat, Bakso Halus,
+Bakso Telur, Bakso Jumbo,
+serta aneka minuman segar.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="col-lg-4 col-md-6 mb-4">
+
+<div class="card service-card">
+
+<div class="icon-box">
+⭐
+</div>
+
+<div class="card-body text-center">
+
+<h4>Pelayanan Ramah</h4>
+
+<p>
+Seluruh pelanggan dilayani dengan cepat,
+ramah, dan mengutamakan kepuasan pelanggan.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CARD 6 -->
+
+<div class="col-lg-4 col-md-6 mb-4">
+
+<div class="card service-card">
+
+<div class="icon-box">
+❤️
+</div>
+
+<div class="card-body text-center">
+
+<h4>Selalu Fresh</h4>
+
+<p>
+Bakso diproduksi setiap hari menggunakan
+bahan-bahan segar agar kualitas rasa tetap terjaga.
+</p>
+
+</div>
+
+</div>
 
 </div>
 
@@ -466,34 +302,184 @@ kebersihan, dan kepuasan pelanggan.
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================
+                MENU FAVORIT
+========================================= -->
 
-<footer class="text-white text-center py-4">
+<section class="menu-section">
 
 <div class="container">
 
-<h4 class="font-weight-bold">
-🍜 Bakso Joyo Mulyo
-</h4>
+<div class="text-center mb-5">
 
-<p class="mb-2">
-Jl. Pepaya No.4, Jadirejo, Sukajadi, Kota Pekanbaru, Riau <br>
-Buka Setiap Hari<br>
-16.00 - 23.00 WIB
+<h2 class="section-title">
+Menu Favorit
+</h2>
+
+<p class="section-subtitle">
+Nikmati berbagai pilihan menu favorit Bakso Joyo Mulyo.
 </p>
 
-<p class="mb-0">
-© 2026 Bakso Joyo Mulyo.
-All Rights Reserved.
+</div>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+
+<div class="card menu-card">
+
+<img src="images/bakso-original.jpg" alt="Bakso Original">
+
+<div class="card-body text-center">
+
+<h4>Bakso Original</h4>
+
+<p>Bakso sapi dengan kuah kaldu gurih yang menggugah selera.</p>
+
+<div class="harga">Rp18.000</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card menu-card">
+
+<img src="images/bakso-urat.jpg" alt="Bakso Urat">
+
+<div class="card-body text-center">
+
+<h4>Bakso Urat</h4>
+
+<p>Bakso urat dengan tekstur kenyal dan rasa daging yang khas.</p>
+
+<div class="harga">Rp22.000</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card menu-card">
+
+<img src="images/bakso-jumbo.jpg" alt="Bakso Jumbo">
+
+<div class="card-body text-center">
+
+<h4>Bakso Jumbo</h4>
+
+<p>Bakso ukuran besar dengan isian daging yang melimpah.</p>
+
+<div class="harga">Rp25.000</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+                    CTA
+========================================= -->
+
+<section class="cta text-center">
+
+<div class="container">
+
+<h2>
+🍜 Ayo Nikmati Bakso Joyo Mulyo!
+</h2>
+
+<p>
+Bakso dengan cita rasa khas, kuah gurih, daging sapi pilihan,
+serta harga yang bersahabat. Cocok dinikmati bersama keluarga
+dan teman kapan saja.
 </p>
+
+<a href="kontak.html" class="btn btn-pesan btn-lg">
+Pesan Sekarang
+</a>
+
+</div>
+
+</section>
+
+<!-- =========================================
+                  FOOTER
+========================================= -->
+
+<footer class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+
+<h3>Bakso Joyo Mulyo</h3>
+
+<p>
+Menyajikan bakso berkualitas dengan rasa yang khas,
+menggunakan bahan segar dan pelayanan terbaik.
+</p>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<h4>Menu</h4>
+
+<p><a href="beranda.html">Beranda</a></p>
+
+<p><a href="menu.html">Menu</a></p>
+
+<p><a href="about.html">About</a></p>
+
+<p><a href="kontak.html">Kontak</a></p>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<h4>Hubungi Kami</h4>
+
+<p>📍 Pekanbaru, Riau</p>
+
+<p>📞 08xxxxxxxxxx</p>
+
+<p>✉ info@baksojoyomulyo.com</p>
+
+</div>
+
+</div>
+
+<hr style="background:white;">
+
+<div class="text-center">
+
+© 2026 <strong>Bakso Joyo Mulyo</strong>. All Rights Reserved.
+
+</div>
 
 </div>
 
 </footer>
 
-<!-- ================= BOOTSTRAP 4.6.2 ================= -->
+<!-- Bootstrap 4.6.2 -->
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
