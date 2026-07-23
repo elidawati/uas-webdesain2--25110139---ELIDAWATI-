@@ -1,40 +1,70 @@
-/* ===================================================
-   ABOUT - BAKSO JOYO MULYO
-=================================================== */
-
+                    BAGIAN BERANDA
+                    
 html{
     scroll-behavior:smooth;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
 body{
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(to bottom,#eefcf2,#dff6ff,#f7fffd);
+    background:linear-gradient(to bottom,#edfdf7,#f3fbff,#ffffff);
     overflow-x:hidden;
 }
 
-/* Radius Bootstrap */
+/* =========================
+      ANIMASI PARAGRAF
+========================= */
 
-.rounded-4{
-    border-radius:20px;
+.hero p{
+    animation:paragrafMasuk 1.8s ease;
 }
 
-.rounded-5{
-    border-radius:35px;
+@keyframes paragrafMasuk{
+
+    0%{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 /* =========================
-        NAVBAR
+    Efek Warna Huruf Berubah
 ========================= */
 
+
+.hero h1{
+    animation:warnaHuruf 6s linear infinite;
+}
+
+@keyframes warnaHuruf{
+    0%{
+        color:#ffffff;
+    }
+    25%{
+        color:#b2ff59;
+    }
+    50%{
+        color:#00e5ff;
+    }
+    75%{
+        color:#4dd0e1;
+    }
+    100%{
+        color:#ffffff;
+    }
+}
+
+/* =========================
+      NAVBAR
+==========================*/
+
 .navbar{
-    background:linear-gradient(90deg,#198754,#0d6efd)!important;
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    background:linear-gradient(90deg,#00a884,#1976d2)!important;
+    box-shadow:0 6px 20px rgba(0,90,150,.25);
 }
 
 .navbar-brand{
@@ -45,593 +75,835 @@ body{
 
 .nav-link{
     color:#fff!important;
-    font-weight:600;
+    font-weight:500;
     transition:.3s;
-    position:relative;
 }
 
 .nav-link:hover{
-    color:#b9fbc0!important;
+    color:#b9f6ca!important;
 }
 
-.nav-link::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:0;
-    height:3px;
+.btn-login{
     background:#fff;
+    color:#1976d2!important;
+    border-radius:30px;
+    padding:8px 25px;
+    font-weight:bold;
     transition:.3s;
 }
 
-.nav-link:hover::after{
-    width:100%;
+.btn-login:hover{
+    background:#e3f2fd;
 }
-
-/* =========================
-        BUTTON
-========================= */
-
-.btn-dark,
-.btn-danger{
-    border-radius:50px;
+.btn-register{
+    background:linear-gradient(90deg,#00c853,#2196f3);
+    color:#fff!important;
+    border-radius:30px;
+    padding:8px 25px;
+    font-weight:bold;
     transition:.3s;
 }
 
-.btn-dark:hover,
-.btn-danger:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,0,0,.25);
+.btn-register:hover{
+    background:linear-gradient(90deg,#00acc1,#1565c0);
 }
-
-/* =========================
-          HERO
-========================= */
 
 .hero{
-
-    min-height:80vh;
-
+    min-height:100vh;
     display:flex;
     align-items:center;
-
+    text-align:center;
+    color:white;
     background:
-    linear-gradient(
-        rgba(25,135,84,.82),
-        rgba(13,110,253,.78)
-    ),
-    url("bakso.jpg");
-
+    linear-gradient(rgba(0,70,120,.55),rgba(0,70,120,.55)),
+    url("https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600");
     background-size:cover;
     background-position:center;
-
-    color:white;
-    text-align:center;
-    position:relative;
-
-}
-
-.hero::before{
-
-    content:"";
-    position:absolute;
-
-    width:450px;
-    height:450px;
-
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-
-    top:-120px;
-    right:-120px;
-
-}
-
-.hero::after{
-
-    content:"";
-    position:absolute;
-
-    width:300px;
-    height:300px;
-
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-
-    left:-80px;
-    bottom:-80px;
-
-}
-
-.hero .container{
-    position:relative;
-    z-index:2;
 }
 
 .hero h1{
-
     font-size:65px;
     font-weight:bold;
-
-    text-shadow:0 5px 20px rgba(0,0,0,.35);
-
-    animation:fadeDown 1s;
-
 }
 
 .hero p{
-
     font-size:22px;
-    max-width:850px;
+    max-width:700px;
     margin:auto;
-
-    animation:fadeUp 1.2s;
-
+    margin-top:20px;
 }
 
-.hero .btn{
-
-    padding:14px 35px;
-    border-radius:50px;
-    font-weight:bold;
+.btn-menu{
+    margin-top:35px;
+    background:linear-gradient(90deg,#00c853,#2196f3);
+    color:#fff;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:20px;
     transition:.3s;
-
 }
 
-.hero .btn:hover{
-
+.btn-menu:hover{
+    background:linear-gradient(90deg,#009688,#1976d2);
+    color:#fff;
     transform:translateY(-5px);
-
 }
 
-/* =========================
-      SECTION TITLE
-========================= */
+.keunggulan{
+    padding:90px 0;
+    background:linear-gradient(to bottom,#ffffff,#eefcf8);
+}
 
 .section-title{
-
-    color:#198754;
+    color:#1976d2;
     font-weight:bold;
-
-    display:inline-block;
-    position:relative;
-
+    font-size:38px;
 }
 
-.section-title::after{
-
-    content:"";
-
-    display:block;
-
-    width:70%;
-    height:4px;
-
-    background:#0d6efd;
-
-    margin:10px auto 0;
-
-    border-radius:20px;
-
+.section-subtitle{
+    color:#607d8b;
+    margin-bottom:50px;
 }
 
-/* =========================
-        ANIMATION
-========================= */
-
-@keyframes fadeDown{
-
-    from{
-
-        opacity:0;
-        transform:translateY(-50px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-        transform:translateY(50px);
-
-    }
-
-    to{
-
-        opacity:1;
-        transform:translateY(0);
-
-    }
-
-}
-
-/* =========================
-     LATAR BELAKANG
-========================= */
-
-.bg-light{
-
-    background:
-    linear-gradient(
-        180deg,
-        #eefcf2,
-        #dff6ff
-    )!important;
-
-}
-
-/*=========================================
-        CARD MODERN PREMIUM
-=========================================*/
-
-.modern-card{
+.service-card{
     border:none;
-    border-radius:25px;
+    border-radius:20px;
     overflow:hidden;
-    position:relative;
     transition:.4s;
-    background:#fff;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    height:100%;
 }
 
-.modern-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:7px;
-    background:linear-gradient(90deg,#198754,#20c997,#0d6efd);
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(33,150,243,.18);
 }
-
-.modern-card::after{
-    content:"";
-    position:absolute;
-    width:180px;
-    height:180px;
-    background:rgba(13,110,253,.08);
-    border-radius:50%;
-    right:-70px;
-    bottom:-70px;
-}
-
-.modern-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 25px 45px rgba(13,110,253,.25)!important;
-}
-
-/*=========================================
-            ICON
-=========================================*/
 
 .icon-box{
     width:90px;
     height:90px;
-    margin:auto;
+    background:linear-gradient(135deg,#00c853,#2196f3);
+    color:#fff;
+    font-size:40px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:40px;
+    margin:30px auto 20px;
+}
+
+.service-card h4{
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.service-card p{
+    color:#666;
+    font-size:15px;
+    line-height:28px;
+}
+
+.menu-section{
+    padding:90px 0;
+    background:linear-gradient(to bottom,#f5fffc,#eef8ff);
+}
+
+.menu-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(33,150,243,.18);
+}
+
+.menu-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.menu-card h4{
+    color:#1976d2;
+    font-weight:bold;
+}
+
+.menu-card p{
+    color:#666;
+}
+
+.harga{
+    color:#00b894;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.cta{
+    padding:90px 0;
+    background:linear-gradient(135deg,#009688,#1976d2);
     color:#fff;
-    background:linear-gradient(135deg,#198754,#0d6efd);
-    box-shadow:0 10px 30px rgba(13,110,253,.35);
-    transition:.5s;
 }
 
-.modern-card:hover .icon-box{
-    transform:rotate(360deg) scale(1.1);
+.cta h2{
+    font-size:42px;
+    font-weight:bold;
 }
 
-/*=========================================
-        FEATURE ICON
-=========================================*/
+.cta p{
+    font-size:18px;
+    margin:20px auto;
+    max-width:700px;
+}
 
-.feature-icon{
-    width:60px;
-    height:60px;
-    border-radius:15px;
+.btn-pesan{
+    background:#fff;
+    color:#1976d2;
+    border-radius:40px;
+    padding:15px 40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-pesan:hover{
+    background:#e3f2fd;
+    color:#009688;
+    transform:translateY(-5px);
+}
+
+footer{
+    background:linear-gradient(90deg,#00695c,#1565c0);
+    color:#fff;
+}
+
+footer a{
+    color:#b2ebf2;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+.keunggulan{
+    padding:90px 0;
+    background:#fff;
+}
+
+.section-title{
+    color:#e648a6;
+    font-weight:bold;
+    font-size:38px;
+}
+
+.section-subtitle{
+    color:#777;
+    margin-bottom:50px;
+}
+
+.service-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+.icon-box{
+    width:90px;
+    height:90px;
+    background:linear-gradient(135deg,#e648a6,#ff5722);
+    color:#fff;
+    font-size:40px;
+    border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:25px;
-    color:#fff;
-    background:linear-gradient(135deg,#20c997,#0d6efd);
-    box-shadow:0 8px 20px rgba(13,110,253,.25);
+    margin:30px auto 20px;
 }
 
-/*=========================================
-        JUDUL
-=========================================*/
-
-.modern-card h4{
-    color:#198754;
-    margin-top:15px;
-    margin-bottom:18px;
-    font-weight:700;
+.service-card h4{
+    color:#c62828;
+    font-weight:bold;
 }
 
-.modern-card h4::after{
-    content:"";
-    display:block;
-    width:60px;
-    height:4px;
-    margin:10px auto;
-    background:linear-gradient(to right,#198754,#0d6efd);
+.service-card p{
+    color:#666;
+    font-size:15px;
+    line-height:28px;
+}
+                BAGIANMENU
+
+.menu-section{
+    padding:90px 0;
+    background:#fff7f2;
+}
+
+.menu-card{
+    border:none;
     border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    height:100%;
 }
 
-/*=========================================
-        PARAGRAF
-=========================================*/
-
-.modern-card p{
-    line-height:1.9;
-    color:#666!important;
+.menu-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 }
 
-/*=========================================
-    WARNA SETIAP CARD BERBEDA
-=========================================*/
-
-/* Card 1 */
-
-.col-lg-4:nth-child(1) .modern-card{
-    background:linear-gradient(180deg,#ffffff,#eefcf2);
+.menu-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
 }
 
-/* Card 2 */
-
-.col-lg-4:nth-child(2) .modern-card{
-    background:linear-gradient(180deg,#ffffff,#eef8ff);
+.menu-card h4{
+    color:#c62828;
+    font-weight:bold;
 }
 
-/* Card 3 */
-
-.col-lg-4:nth-child(3) .modern-card{
-    background:linear-gradient(180deg,#ffffff,#f3fffd);
+.menu-card p{
+    color:#666;
 }
 
-/*=========================================
-      ANIMASI CARD
-=========================================*/
-
-.modern-card{
-    animation:fadeCard .8s ease;
+.harga{
+    color:#ff5722;
+    font-size:24px;
+    font-weight:bold;
 }
 
-@keyframes fadeCard{
+.cta{
+    padding:90px 0;
+    background:linear-gradient(135deg,#6accf0,#6ec1d0);
+    color:#fff;
+}
 
-    from{
+.cta h2{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.cta p{
+    font-size:18px;
+    margin:20px auto;
+    max-width:700px;
+}
+
+.btn-pesan{
+    background:#ffc107;
+    color:#fff;
+    border-radius:40px;
+    padding:15px 40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-pesan:hover{
+    background:#ff9800;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+footer{
+    background:#6bc57f;
+    color:#1a1616;
+}
+
+footer a{
+    color:#212120;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+/* =====================================
+            DESAIN PALING BAWAH
+===================================== */
+
+.cta{
+    position:relative;
+    overflow:hidden;
+    padding:100px 0;
+    background:linear-gradient(135deg,#009688,#1976d2);
+    color:#fff;
+}
+
+/* Lingkaran Dekorasi */
+
+.cta::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-150px;
+    left:-120px;
+    animation:float1 8s ease-in-out infinite;
+}
+
+.cta::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    bottom:-100px;
+    right:-80px;
+    animation:float2 10s ease-in-out infinite;
+}
+
+@keyframes float1{
+    50%{
+        transform:translateY(25px);
+    }
+}
+
+@keyframes float2{
+
+    50%{
+        transform:translateY(-25px);
+    }
+}
+
+.cta h2{
+    font-size:46px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:0 5px 15px rgba(0,0,0,.25);
+    position:relative;
+    z-index:2;
+}
+
+.cta p{
+    max-width:750px;
+    margin:20px auto;
+    font-size:18px;
+    line-height:32px;
+    position:relative;
+    z-index:2;
+}
+
+/* Tombol */
+
+.btn-pesan{
+    background:#fff;
+    color:#1976d2;
+    padding:15px 45px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    position:relative;
+    z-index:2;
+}
+
+.btn-pesan:hover{
+
+    transform:translateY(-6px) scale(1.05);
+
+    background:#e8f5e9;
+
+    color:#009688;
+
+}
+
+/* =====================================
+FOOTER BUAT BAGIAN MENU DAN HUBUNGI KAMI
+===================================== */
+
+footer{
+
+    position:relative;
+
+    background:linear-gradient(135deg, #00C853,#38434f);
+
+    color:#fff;
+
+    overflow:hidden;
+
+}
+
+/* Dekorasi Background */
+
+footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+
+    height:400px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    top:-180px;
+
+    left:-150px;
+
+}
+
+footer::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    bottom:-120px;
+
+    right:-120px;
+
+}
+
+/* Judul */
+
+footer h3,
+footer h4{
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+}
+
+footer h3::after,
+footer h4::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:4px;
+
+    background:#00e676;
+
+    margin-top:8px;
+
+    border-radius:20px;
+
+}
+
+/* Paragraf */
+
+footer p{
+
+    color:#ecf8ff;
+
+    line-height:30px;
+
+}
+
+/* Link */
+
+footer a{
+
+    color:#b2ebf2;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#ffffff;
+
+    padding-left:8px;
+
+    text-decoration:none;
+
+}
+
+/* Garis */
+
+footer hr{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+/* Copyright */
+
+footer .text-center{
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+}
+
+/* Efek Ikon */
+
+footer h3:hover,
+footer h4:hover{
+
+    color:#00e676;
+
+    transition:.3s;
+
+}
+
+/*=====================================
+        ANIMASI MENU FAVORIT
+=====================================*/
+
+.menu-card{
+    animation:menuNaik 1.2s ease;
+}
+
+@keyframes menuNaik{
+
+    0%{
         opacity:0;
-        transform:translateY(40px);
+        transform:translateY(80px);
     }
 
-    to{
+    100%{
         opacity:1;
         transform:translateY(0);
     }
 
 }
 
-/*=========================================
-        ABOUT IMAGE
-=========================================*/
+.menu-card:hover{
 
-.about-img{
-    overflow:hidden;
-    border-radius:30px;
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    transform:translateY(-15px) scale(1.04);
+
+    box-shadow:0 25px 45px rgba(0,150,255,.25);
+
 }
 
-.about-img img{
-    transition:.6s;
-}
+/* Gambar Zoom */
 
-.about-img:hover img{
-    transform:scale(1.08);
-}
+.menu-card img{
 
-/*=========================================
-        HOVER IMAGE
-=========================================*/
-
-.about-img::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(
-        rgba(25,135,84,.10),
-        rgba(13,110,253,.10)
-    );
-    opacity:0;
-    transition:.4s;
-}
-
-.about-img:hover::after{
-    opacity:1;
-}
-
-/*=========================================
-        VISI & MISI PREMIUM
-=========================================*/
-
-.vision-box{
-    background:linear-gradient(135deg,#eefcf2,#dff6ff);
-    padding:50px;
-    border-radius:35px;
-    position:relative;
-    overflow:hidden;
-    box-shadow:0 20px 45px rgba(13,110,253,.18);
-}
-
-/* Ornamen */
-
-.vision-box::before{
-    content:"🍜";
-    position:absolute;
-    font-size:170px;
-    top:-25px;
-    right:30px;
-    opacity:.05;
-}
-
-.vision-box::after{
-    content:"🥢";
-    position:absolute;
-    left:20px;
-    bottom:-10px;
-    font-size:120px;
-    opacity:.05;
-}
-
-/* Card */
-
-.visi-card,
-.misi-card{
-    height:100%;
-    padding:35px;
-    border-radius:25px;
-    color:#fff;
-    position:relative;
-    overflow:hidden;
-    transition:.4s;
-}
-
-/* Warna Card */
-
-.visi-card{
-    background:linear-gradient(135deg,#198754,#20c997);
-}
-
-.misi-card{
-    background:linear-gradient(135deg,#0d6efd,#0b5ed7);
-}
-
-/* Lingkaran Transparan */
-
-.visi-card::before,
-.misi-card::before{
-    content:"";
-    position:absolute;
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    background:rgba(255,255,255,.10);
-    right:-80px;
-    top:-80px;
-}
-
-.visi-card::after,
-.misi-card::after{
-    content:"";
-    position:absolute;
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-    left:-40px;
-    bottom:-40px;
-}
-
-/* Hover */
-
-.visi-card:hover,
-.misi-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 45px rgba(0,0,0,.25);
-}
-
-/* Icon */
-
-.title-icon{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    background:#fff;
-    color:#198754;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:36px;
-    margin:0 auto 20px;
-    box-shadow:0 10px 25px rgba(0,0,0,.20);
     transition:.5s;
+
 }
 
-.visi-card:hover .title-icon,
-.misi-card:hover .title-icon{
-    transform:rotate(360deg) scale(1.1);
+.menu-card:hover img{
+
+    transform:scale(1.1);
+
 }
 
-/* Judul */
+/*=====================================
+            CTA BERGERAK
+=====================================*/
 
-.visi-card h2,
-.misi-card h2{
-    text-align:center;
-    font-size:34px;
-    font-weight:bold;
-    margin-bottom:20px;
+.cta{
+
+    position:relative;
+
+    overflow:hidden;
+
 }
 
-.visi-card h2::after,
-.misi-card h2::after{
+/* Lingkaran bergerak */
+
+.cta::before{
+
     content:"";
-    display:block;
-    width:70px;
-    height:4px;
-    margin:12px auto;
-    background:#fff;
-    border-radius:20px;
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-150px;
+
+    left:-120px;
+
+    animation:gerak1 8s infinite ease-in-out;
+
 }
 
-/* Isi */
+.cta::after{
 
-.visi-card p{
-    font-size:17px;
-    line-height:1.9;
-    text-align:justify;
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    bottom:-120px;
+
+    right:-80px;
+
+    animation:gerak2 10s infinite ease-in-out;
+
 }
 
-.misi-card ul{
-    padding-left:22px;
-    margin:0;
+@keyframes gerak1{
+
+    50%{
+
+        transform:translateY(35px) rotate(20deg);
+
+    }
+
 }
 
-.misi-card li{
-    margin-bottom:12px;
-    line-height:1.8;
+@keyframes gerak2{
+
+    50%{
+        transform:translateY(-35px) rotate(-20deg);
+    }
 }
 
-.misi-card li::marker{
-    color:#fff;
-    font-size:18px;
+/* Judul CTA */
+
+.cta h2{
+    animation:zoomTulisan 2s infinite alternate;
 }
 
-/* Efek Glow */
+@keyframes zoomTulisan{
 
-.visi-card{
-    box-shadow:0 15px 35px rgba(25,135,84,.25);
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.05);
+    }
 }
 
-.misi-card{
-    box-shadow:0 15px 35px rgba(13,110,253,.25);
+/* Tombol */
+
+.btn-pesan{
+
+    animation:denyut 2s infinite;
 }
 
-.visi-card:hover{
-    box-shadow:0 25px 50px rgba(25,135,84,.40);
+@keyframes denyut{
+
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.08);
+    }
+
+   100%{
+        transform:scale(1);
+    }
 }
 
-.misi-card:hover{
-    box-shadow:0 25px 50px rgba(13,110,253,.40);
+/*=====================================
+        FOOTER ANIMASI
+=====================================*/
+
+footer{
+    position:relative;
+    overflow:hidden;
 }
+
+/* Background bergerak */
+
+footer::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(255,255,255,.05);
+    border-radius:50%;
+    left:-180px;
+    top:-180px;
+    animation:putar 20s linear infinite;
+}
+
+footer::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.05);
+    border-radius:50%;
+    right:-120px;
+    bottom:-120px;
+    animation:putar 15s linear infinite reverse;
+}
+
+@keyframes putar{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Link Footer */
+
+footer a{
+    transition:.3s;
+}
+
+footer a:hover{
+    padding-left:10px;
+    color:#ffffff;
+}
+
+/* Copyright */
+
+footer .text-center{
+    animation:fadeCopyright 3s infinite alternate;
+}
+
+@keyframes fadeCopyright{
+    from{
+        opacity:.6;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+/* =========================
+      CSS BAGIAN MENU
+========================= */
+
