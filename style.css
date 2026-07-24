@@ -604,29 +604,22 @@ footer a{
 }
 
 footer a:hover{
-
     color:#ffffff;
     padding-left:8px;
     text-decoration:none;
-
 }
 
 /* Garis */
 
 footer hr{
-
     border-top:1px solid rgba(255,255,255,.15);
-
 }
 
 /* Copyright */
 
 footer .text-center{
-
     font-size:15px;
-
     letter-spacing:1px;
-
 }
 
 /* Efek Ikon */
@@ -1255,4 +1248,3 @@ transform:scale(1);
 
 }
 }
-
