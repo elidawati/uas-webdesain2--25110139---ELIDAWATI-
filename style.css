@@ -116,7 +116,7 @@ body{
     color:white;
     background:
     linear-gradient(rgba(0,70,120,.55),rgba(0,70,120,.55)),
-    url("https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600");
+    url("bakso.jpg");
     background-size:cover;
     background-position:center;
 }
@@ -961,7 +961,7 @@ body::after{
     min-height:90vh;
     background:
     linear-gradient(rgba(0,150,136,.75),rgba(33,150,243,.75)),
-    url("https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600");
+    url("bakso.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
