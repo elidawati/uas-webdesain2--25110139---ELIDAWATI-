@@ -1481,6 +1481,14 @@ transform:scale(1);
     box-shadow: 0 10px 20px rgba(33, 150, 243, 0.3);
 }
 
+/* Accordion FAQ Customization */
+.accordion-item {
+    border: none;
+    border-radius: 15px !important;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
 .accordion-button {
     font-weight: 700;
@@ -1505,3 +1513,4 @@ iframe {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
