@@ -1,4 +1,4 @@
-                    BAGIAN BERANDA
+BAGIAN BERANDA
                     
 html{
     scroll-behavior:smooth;
@@ -223,9 +223,9 @@ body{
 }
 
 .menu-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
+    width: 100%;
+    height: 180px; /* Nilai diubah agar berbentuk persegi panjang */
+    object-fit: cover; /* Agar gambar tidak gepeng/terdistorsi */
 }
 
 .menu-card h4{
@@ -612,14 +612,19 @@ footer a:hover{
 /* Garis */
 
 footer hr{
+
     border-top:1px solid rgba(255,255,255,.15);
+
 }
 
 /* Copyright */
 
 footer .text-center{
+
     font-size:15px;
+
     letter-spacing:1px;
+
 }
 
 /* Efek Ikon */
@@ -930,7 +935,7 @@ body::after{
     border:none;
 }
 
-.btn-login:hover{
+.btn-:hover{
     background:#f2f2f2;
 }
 
@@ -1247,4 +1252,256 @@ transform:scale(1.1);
 transform:scale(1);
 
 }
+}
+
+/* =====================================
+      CSS TAMBAHAN KHUSUS ABOUT.HTML
+===================================== */
+
+/* 1. GAMBAR IDENTITAS */
+.about-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 2. ITEM FITUR KECIL DI IDENTITAS */
+.feature-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.feature-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #00c853, #1976d2);
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* 3. KARTU MODERN LATAR BELAKANG & KEUNGGULAN */
+.modern-card {
+    border-radius: 20px !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(25, 118, 210, 0.15) !important;
+}
+
+/* 4. VISI MISI SECTION */
+.vision-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.visi-card, .misi-card {
+    background: linear-gradient(145deg, #ffffff, #f0fdf4);
+    border: 1px solid #e0f2fe;
+    border-radius: 20px;
+    padding: 35px 25px;
+    transition: transform 0.3s ease;
+}
+
+.visi-card:hover, .misi-card:hover {
+    transform: translateY(-5px);
+}
+
+.title-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00a884, #1976d2);
+    color: #ffffff;
+    font-size: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.misi-card ul {
+    padding-left: 20px;
+}
+
+.misi-card ul li {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+/* 5. EFEK GELOMBANG (FOOTER WAVE) */
+.footer-wave svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 6. CTA BOX DEKORASI */
+.cta-box {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(135deg, #00a884, #1976d2) !important;
+}
+
+.cta-title {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-box p, .cta-box a {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-box .circle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.cta-box .circle1 { width: 150px; height: 150px; top: -30px; left: -30px; }
+.cta-box .circle2 { width: 220px; height: 220px; bottom: -50px; right: -40px; }
+.cta-box .circle3 { width: 90px; height: 90px; top: 40%; left: 80%; }
+
+.cta-box .icon {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.3;
+}
+
+.cta-box .noodle1 { top: 15%; left: 10%; }
+.cta-box .noodle2 { bottom: 20%; right: 15%; }
+.cta-box .star1 { top: 20%; right: 10%; }
+.cta-box .star2 { bottom: 15%; left: 8%; }
+.cta-box .star3 { top: 50%; left: 50%; }
+
+.cta-btn {
+    border-radius: 40px;
+    font-weight: bold;
+    color: #1976d2 !important;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background: #e3f2fd;
+}
+
+/* 7. FOOTER CUSTOM ABOUT */
+.footer-custom {
+    background: linear-gradient(135deg, #00695c, #1565c0) !important;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+/* =====================================
+      CSS TAMBAHAN KHUSUS KONTAK.HTML
+===================================== */
+
+/* Card Informasi Kontak */
+.modern-card {
+    border: none;
+    border-radius: 20px !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: #ffffff;
+}
+
+.modern-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(25, 118, 210, 0.18) !important;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #00c853, #2196f3);
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(0, 200, 83, 0.25);
+}
+
+/* Formulir Kontak */
+.contact-form {
+    border: none;
+    border-radius: 25px;
+    background: #ffffff;
+}
+
+.contact-form .form-control {
+    border-radius: 12px;
+    padding: 12px 18px;
+    border: 1px solid #cfd8dc;
+}
+
+.contact-form .form-control:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 0.25rem rgba(25, 118, 210, 0.15);
+}
+
+/* Tombol Media Sosial */
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00c853, #2196f3);
+    color: #ffffff !important;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none !important;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(33, 150, 243, 0.3);
+}
+
+
+.accordion-button {
+    font-weight: 700;
+    color: #1976d2;
+    background-color: #ffffff;
+    padding: 18px 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #009688;
+    background-color: #e8f5e9;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* Peta Lokasi Rounded */
+iframe {
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
