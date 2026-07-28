@@ -1,5 +1,7 @@
-BAGIAN BERANDA
-                    
+/* ==========================================================================
+   BAGIAN BERANDA
+   ========================================================================== */
+
 html{
     scroll-behavior:smooth;
 }
@@ -11,7 +13,7 @@ body{
 }
 
 /* =========================
-      ANIMASI PARAGRAF
+     ANIMASI PARAGRAF
 ========================= */
 
 .hero p{
@@ -59,7 +61,7 @@ body{
 }
 
 /* =========================
-      NAVBAR
+     NAVBAR
 ==========================*/
 
 .navbar{
@@ -92,10 +94,10 @@ body{
     transition:.3s;
 }
 
-.btn-login:hover{
+.login:hover{
     background:#e3f2fd;
 }
-.btn-register{
+.register{
     background:linear-gradient(90deg,#00c853,#2196f3);
     color:#fff!important;
     border-radius:30px;
@@ -104,7 +106,7 @@ body{
     transition:.3s;
 }
 
-.btn-register:hover{
+.register:hover{
     background:linear-gradient(90deg,#00acc1,#1565c0);
 }
 
@@ -343,7 +345,10 @@ footer a:hover{
     font-size:15px;
     line-height:28px;
 }
-                BAGIANMENU
+
+/* ==========================================================================
+   BAGIAN MENU
+   ========================================================================== */
 
 .menu-section{
     padding:90px 0;
@@ -771,7 +776,9 @@ footer h4:hover{
 }
 
 /*=====================================
-        FOOTER ANIMAS
+        FOOTER ANIMASI
+=====================================*/
+
 /* =========================
       CSS BAGIAN MENU
 ========================= */
@@ -855,7 +862,7 @@ body::after{
 
 }
 
-.btn-login{
+.login{
     background:white;
     color:#009688;
     border-radius:30px;
@@ -864,11 +871,11 @@ body::after{
     border:none;
 }
 
-.btn-login:hover {
+.login:hover {
     background: #f2f2f2;
 }
 
-.btn-register{
+.register{
     background:#ffd54f;
     color:#333;
     border-radius:30px;
@@ -877,7 +884,7 @@ body::after{
     border:none;
 }
 
-.btn-register:hover{
+.register:hover{
     background:#ffca28;
 }
 
@@ -1442,4 +1449,3 @@ iframe {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
