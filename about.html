@@ -260,7 +260,7 @@ NAVBAR BUAT GAMBAR DI SAMPING JUDUL
                     <div class="card modern-card shadow border-0 h-100">
                         <div class="card-body text-center p-4">
                             <div class="icon-box mb-4">
-                                <i class="bi bi-bowl-hot-fill"></i>
+                                <i class="bi bi-heart-fill"></i>
                             </div>
                             <h5 class="font-weight-bold">Rasa Khas</h5>
                             <p class="text-muted">
@@ -315,10 +315,16 @@ NAVBAR BUAT GAMBAR DI SAMPING JUDUL
         </div>
     </section>
 
-    <!-- Wave buat gelombang orange -->
+    <!-- Wave disesuaikan dengan warna teal-biru header -->
     <div class="footer-wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ff6f00" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,208C672,192,768,160,864,170.7C960,181,1056,235,1152,250.7C1248,267,1344,245,1392,234.7L1440,224L1440,320L0,320Z"></path>
+            <defs>
+                <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00a884" />
+                    <stop offset="100%" stop-color="#1976d2" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#wave-gradient)" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,218.7C384,224,480,224,576,208C672,192,768,160,864,170.7C960,181,1056,235,1152,250.7C1248,267,1344,245,1392,234.7L1440,224L1440,320L0,320Z"></path>
         </svg>
     </div>
 
